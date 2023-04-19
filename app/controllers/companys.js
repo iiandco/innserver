@@ -34,6 +34,7 @@ exports.get = async (req, res) => {
                             value: data.suggestions[0].value
                         })
                         console.log(data)
+                        console.log(data.data)
                         res.status(200).json(data.suggestions[0])
                     } else {
                         res.status(200).json({ value: "Неверный ИНН" })
